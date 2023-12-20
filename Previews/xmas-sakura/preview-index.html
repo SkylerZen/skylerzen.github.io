@@ -2,22 +2,36 @@
 	<html>
 		<head>
 			<title>SkyArts</title>
-			<meta name="viewport" content="width=device-width, initial-scale=1.0">
+			<meta name="viewport" content="width=device-width, initial-scale=1.0"">
 			<link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
 			<link href='https://fonts.googleapis.com/css?family=Dancing Script' rel='stylesheet'>
 			<link href='https://fonts.googleapis.com/css?family=Caveat' rel='stylesheet'>
 			<link rel="stylesheet" href="../../style.css">
+			<link rel="stylesheet" href="../../navbar.css">
 		</head>
 		<body>
-			<ul>
-				<li><a href="../../index.html">Home</a></li>
-				<li><a class="active" href="#projects">Projects</a></li>
-				<li><a href="#affiliates">Affiliates</a></li>
-				<li><a href="#aboutme">About Me</a></li>
-				<li style="float:right"><a href="Holiday with Sakura.ipv" download>Download IPV</a></li>
-			</ul>
-			<h1>SkyArts</h1>
-			<h3>Works by SkylerZen, 2023</h3>
+			<nav class="navbar">
+				<div class="logo"><h1>SkyArts</h1> <h6>Works by SkylerZen, 2023</h6></div>
+
+				<ul class="nav-links">
+				  <input type="checkbox" id="checkbox_toggle" />
+				  <label for="checkbox_toggle" class="hamburger">&#9776;</label>
+				  <div class="menu">
+					<li><a  href="../../index.html">Home</a></li>
+					<li class="services">
+					  <a class="active">Projects</a>
+					  <ul class="dropdown">
+						<li><a href="#artworks">Artworks</a></li>
+						<li><a href="#archives">Archives</a></li>
+						<li><a href="#wips">WIPs</a></li>
+						<li><a href="Holiday with Sakura.ipv" download>Download IPV</a></li>
+						</ul>
+					</li>
+					<li><a href="#affiliates">Affiliates</a></li>
+					<li><a href="#aboutme">About Me</a></li>
+				  </div>
+				</ul>
+			  </nav>
 			<h2>Holiday with Sakura, December 15, 2023</h2>
 			<div class="gallery">
 				<a target="_blank" href="preview1.png">
