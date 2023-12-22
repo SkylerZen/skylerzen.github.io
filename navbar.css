@@ -100,9 +100,9 @@ li a {
     display:none;
     position: absolute;
     background-color:#333;
-    top: 80;
-    right: 0;
-    left: 0;
+    top: 99;
+    right: 20;
+    left: 20;
     text-align: center;
     padding: 16px 0;
   }
