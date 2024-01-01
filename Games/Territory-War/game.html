@@ -1,45 +1,65 @@
-<html>
-<head>
-<title>
-Territory War | afro-ninja.com
-</title>
-<link REL="SHORTCUT ICON" HREF="http://afro-ninja.com">
-</head>
-<body bgcolor=#000000> 
-<center>
-<table style="color:#ffffff; background-color:#000000;">
-<tr><td>ATTENTION: Movies, games, forums, scoreboards alike and Territory War is now available ONLINE!</td></tr>
+<!DOCTYPE html>
+    <head>
+        <title>
+            Test 
+        </title>
+        <link href='https://fonts.googleapis.com/css?family=Dancing Script' rel='stylesheet'>
+        <link href='https://fonts.googleapis.com/css?family=Caveat' rel='stylesheet'>
+        <link rel="stylesheet" href="../../Blogs/blog-style.css">
+        <link rel="stylesheet" href="../../style.css">
+        <link rel="stylesheet" href="../../navbar.css">
+    </head>
+    <body>
+        <nav class="navbar">
+            <div class="logo"><h1>SkyArts</h1> <h6>Works by SkylerZen, 2023</h6></div>
 
-<tr><td align=center>Check it out at <a href="http://www.afro-ninja.com/" title="Flash Games Download | afro-ninja.com" target="_blank" style="color:#ffffff">AFRO-NINJA.COM</a>!!!!!</td></tr>
-<tr><td align=center>Play this game on my site for the ability to enter your best challenge times on the high score list!</td></tr>
-</table>
-<div id="container"> </div>
-
-<script src="https://unpkg.com/@ruffle-rs/ruffle"></script>
-    <script>
-        window.RufflePlayer = window.RufflePlayer || {};
-        window.addEventListener("load", (event) => {
-            const ruffle = window.RufflePlayer.newest();
-            const player = ruffle.createPlayer();
-            const container = document.getElementById("container"); 
-            container.appendChild(player);
-            player.load({
-                url: "game.swf", 
-                backgroundColor: "#000", 
-             });
-            player.style.width = "650px"; 
-            player.style.height = "500px";
-        });
-    </script>
-<table style="color:#ffffff; background-color:#000000;">
-
-<tr><td align=center>Welcome to Territory War! In this game you choose either to play mission mode, challenge mode,</td></tr>
-<tr><td align=center>or custom battle mode. Play against a human/CPU. Unlock additional stages, missions, and hats!</td></tr>
- 
-<tr><td align=center>This game will also track your stat progress as far as kills, headshots, accuracy, etc.</td></tr>
-<tr><td align=center></td></tr>
-
-</table> 
-</center>
-</body>
-</html>
+            <ul class="nav-links">
+              <input type="checkbox" id="checkbox_toggle" />
+              <label for="checkbox_toggle" class="hamburger">&#9776;</label>
+              <div class="menu">
+                <li><a href="../../index.html">Home</a></li>
+                <li class="services">
+                  <a>Projects</a>
+                  <ul class="dropdown">
+                    <li><a href="../../Artworks/dummy.html">Artworks</a></li>
+                    <li><a href="../../Blogs/blog.html">Blogs</a></li>
+                    <li><a href="#archives">Archives</a></li>
+                    <li><a href="#wips">WIPs</a></li>
+                   </ul>
+                </li>
+                <li><a class="active" href="../dummy.html">Games</a></li>
+                <li><a href="#affiliates">Affiliates</a></li>
+                <li><a href="#aboutme">About Me</a></li>
+              </div>
+            </ul>
+          </nav>
+        <div class="header">
+            <h2>Territory War</h2>
+            <center>
+                <div id="container"> </div>
+                <script src="https://unpkg.com/@ruffle-rs/ruffle"></script>
+                    <script>
+                        window.RufflePlayer = window.RufflePlayer || {};
+                        window.addEventListener("load", (event) => {
+                            const ruffle = window.RufflePlayer.newest();
+                            const player = ruffle.createPlayer();
+                            const container = document.getElementById("container"); 
+                            container.appendChild(player);
+                            player.load({
+                                autoplay: "on",
+                                url: "game.swf", 
+                                backgroundColor: "#000", 
+                             });
+                            player.style.width = "650px"; 
+                            player.style.height = "500px";
+                        });
+                    </script>
+            </center>
+            <h5>
+                Welcome to Territory War! 
+                In this game you choose either to play mission mode, challenge mode, or custom battle mode. 
+                Play against a human/CPU. Unlock additional stages, missions, and hats! 
+                This game will also track your stat progress as far as kills, headshots, accuracy, etc.
+            </h5>
+        </div>
+    </body>
