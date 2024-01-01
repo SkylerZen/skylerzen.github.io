@@ -37,3 +37,7 @@ div.desc {
     line-height: normal;
     text-align: center;
 }
+ruffle-object, ruffle-embed {
+    width: 100%;
+    height: 100%;
+}
