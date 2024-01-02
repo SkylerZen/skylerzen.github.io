@@ -48,8 +48,11 @@
                             player.load({
                                 autoplay: "on",
                                 url: "game.swf", 
-                                backgroundColor: "#000", 
+                                forceScale: true,
+                                letterbox: "on",
                              });
+            player.style.width = "100%"; 
+            player.style.height = "50%";
                         });
                     </script>
             </center>
@@ -58,6 +61,9 @@
                 In this game you choose either to play mission mode, challenge mode, or custom battle mode. 
                 Play against a human/CPU. Unlock additional stages, missions, and hats! 
                 This game will also track your stat progress as far as kills, headshots, accuracy, etc.
+            </h5>
+            <h5>
+            	- - It's best played fullscreen. - -
             </h5>
         </div>
     </body>
